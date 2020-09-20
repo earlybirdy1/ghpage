@@ -1,4 +1,4 @@
-function redirectMe() { window.location.replace("http://stackoverflow.com"); return false; }
+
 
 body {
     margin: 0;
